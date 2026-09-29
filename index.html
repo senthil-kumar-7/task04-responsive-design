@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Enterprise Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1>Enterprise Dashboard</h1>
+    <button class="theme-btn" type="button">Toggle Theme</button>
+  </header>
+  <main class="dashboard">
+    <section class="hero">
+      <p class="eyebrow">RESPONSIVE DESIGN SYSTEM</p>
+      <h2>Mobile-first dashboard</h2>
+      <p>Fluid layout using CSS Grid, Flexbox, design tokens and responsive breakpoints.</p>
+    </section>
+    <section class="grid" aria-label="Dashboard statistics">
+      <article class="card"><span>Total Users</span><strong>1,250</strong><small>+12% this month</small></article>
+      <article class="card"><span>Active Projects</span><strong>24</strong><small>8 due this week</small></article>
+      <article class="card"><span>Completed Tasks</span><strong>186</strong><small>+18 today</small></article>
+      <article class="card"><span>Accessibility</span><strong>98%</strong><small>Audit score</small></article>
+    </section>
+    <section class="content">
+      <article class="panel">
+        <h2>Project Progress</h2>
+        <div class="progress"><span style="width:78%"></span></div>
+        <p>78% of the current project is complete.</p>
+      </article>
+      <aside class="panel">
+        <h2>Quick Actions</h2>
+        <div class="actions">
+          <button>New Project</button><button>View Reports</button><button>Settings</button>
+        </div>
+      </aside>
+    </section>
+  </main>
+  <footer>© 2026 Responsive Design Demo</footer>
+  <script>
+    document.querySelector('.theme-btn').addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+    });
+  </script>
+</body>
+</html>
